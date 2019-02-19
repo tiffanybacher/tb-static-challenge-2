@@ -1,0 +1,317 @@
+/* ----- body styles ----- */
+
+body {
+  color: #888;
+  font-family: 'Barlow', sans-serif;
+  margin: 0 auto;
+  display: flex;
+}
+
+h1 {
+  color: #666;
+  font-size: 1.8em;
+  font-weight: 500;
+  margin: 0;
+}
+
+h3 {
+
+}
+
+h4 {
+  font-size: .8em;
+}
+
+h6 {
+  font-size: .8em;
+}
+
+h3,
+h4,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+}
+
+/* ----- .sidebar styles ----- */
+
+.sidebar {
+  /*grid-area: sidebar;*/
+  background-color: #40454f;
+  color: #bcbcbc;
+  width: 200px;
+  height: 100%;
+}
+
+.sidebar--user {
+  text-align: center;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 75px;
+  margin-top: 40px;
+}
+
+.user-sortdown-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebar--main,
+.sidebar--admin,
+.sidebar--ctgry {
+  border-top: 1px solid #535966;
+  box-shadow: 0px -2.5px #353942;
+  padding: 10px 0px;
+}
+
+.sidebar-header {
+  color: #999;
+  margin: 15px 20px;
+}
+
+.sidebar-main-list,
+.sidebar-admin-list,
+.sidebar-ctgry-list {
+  padding: 0px;
+  margin: 0px;
+}
+
+.sidebar-list-item {
+  margin: 20px;
+}
+
+.sidebar-icon {
+  display: inline;
+  margin-right: 10px;
+  text-align: center;
+  width: 20px;
+}
+
+.sidebar-link h4 {
+  display: inline;
+}
+
+.sidebar-link {
+  color: #bcbcbc;
+}
+
+.sidebar-link:hover {
+  color: #fff;
+}
+
+.sidebar-link:active {
+  color: #bcbcbc;
+}
+
+.sidebar-ctgry-list {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  position: relative;
+}
+
+.sidebar-ctgry-list input {
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+}
+
+.checkmark {
+  background-color: #eee;
+  border-radius: 1px;
+  height: 15px;
+  margin-left: 20px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 15px;
+}
+
+.checkmark-1 {
+  background-color: #f1be49;
+}
+
+.checkmark-2 {
+  background-color: #5ea6bc;
+}
+
+.checkmark-3 {
+  background-color: #d38685;
+}
+
+.checkmark-4 {
+  background-color: #a5ca7d;
+}
+
+.checkbox:hover ~ .checkmark-1 {
+  background-color: #f2d100;
+}
+
+.checkbox:hover ~ .checkmark-2 {
+  background-color: #4cbedb;
+}
+
+.checkbox:hover ~ .checkmark-3 {
+  background-color: #fc9292;
+}
+
+.checkbox:hover ~ .checkmark-4 {
+  background-color: #bae28c;
+}
+
+.checkmark:after {
+  border: solid #40454f;
+  border-width: 0 2px 2px 0;
+  content: "";
+  display: none;
+  height: 6px;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  transform: rotate(45deg);
+  width: 3px;
+}
+
+.checkbox:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* ----- header styles ----*/
+
+.header--top {
+  display: flex;
+}
+
+.header-top-div {
+  border-left: 0px;
+  border: solid 1px #ccc;
+  padding: 25px;
+  text-align: center;
+}
+
+.hamburger,
+.add-person,
+.calendar-add,
+.grid-view {
+  flex: 1;
+}
+
+.search-bar {
+  flex: 15;
+  text-align: left;
+}
+
+.hamburger:hover,
+.add-person:hover,
+.calendar-add:hover,
+.grid-view:hover {
+  background-color: #5ea6bc;
+}
+
+.header-top-div:hover > .top-icon {
+  color: #fff;
+}
+
+.caret-icon {
+  color: #5ea6bc;
+  margin-right: 2px;
+}
+
+.search-placer {
+  display: inline;
+  margin-left: 10px;
+  outline: none;
+}
+
+.grid-view {
+  border-right: 0;
+}
+
+.header--main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.location-icon {
+  margin-right: 5px;
+}
+
+.dot {
+  color: #ccc;
+  margin: 0 10px;
+}
+
+.subheader-preview {
+  color: #4cbedb;
+}
+
+.subheader-preview:hover {
+  text-decoration: underline;
+}
+
+.status-icon {
+  color: yellowgreen;
+}
+
+.header-btn {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  color: #888;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  font-weight: 700;
+  margin: 10px;
+  min-width: 42px;
+  padding: 10px;
+}
+
+.header-btn--status {
+  padding: 10px 15px;
+}
+
+.status-icon {
+  margin-right: 5px;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+/* ----- main styles ----- */
+
+.main {
+  background-color: #f4f5f7;
+}
+
+.main-nav-link {
+  padding: 20px;
+}
+
+.hiring-avatar {
+  border-radius: 50%;
+  width: 50px;
+}
+
+
+
+
+
+

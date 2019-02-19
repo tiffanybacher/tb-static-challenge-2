@@ -4,106 +4,259 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700" rel="stylesheet">
   <title>Job Search</title>
 </head>
 <body>
+<div class="sidebar-div">
   <section class="sidebar">
-    <article class="sidebar-user">
-      <img src="" alt="Your Avatar">
-      <p class="user-name"><a href="" class="sidebar-link">Tiffany Bacher</a></p>
+    <article class="sidebar--user">
+      <img src="images/tiff.jpg" alt="Your Avatar" class="user-avatar">
+      <p><a href="" class="sidebar-username sidebar-link">Tiffany Bacher<i class="user-sortdown-icon fas fa-angle-down"></i></a></p>
     </article><!-- /.sidebar-user -->
-    <article class="sidebar-main">
+    <article class="sidebar--main">
       <h6 class="sidebar-header">Main</h6>
       <ul class="sidebar-main-list">
-        <li><a href="" class="sidebar-link"><h4>HOME</h4></a></li>
-        <li><a href="" class="sidebar-link"><h4>JOBS</h4></a></li>
-        <li><a href="" class="sidebar-link"><h4>RESUMES</h4></a></li>
-        <li><a href="" class="sidebar-link"><h4>TASKS</h4></a></li>
-        <li><a href="" class="sidebar-link"><h4>CALENDAR</h4></a></li>
+        <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-home"></i><h4>HOME</h4></a></li>
+        <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-briefcase"></i><h4>JOBS</h4></a></li>
+        <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-file-alt"></i><h4>RESUMES</h4></a></li>
+        <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-tasks"></i><h4>TASKS</h4></a></li>
+        <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-calendar-alt"></i><h4>CALENDAR</h4></a></li>
       </ul>
     </article><!-- /.sidebar-main -->
-    <article class="sidebar-admin">
+    <article class="sidebar--admin">
       <h6 class="sidebar-header">Admin</h6>
       <ul class="sidebar-admin-list">
-        <li><a href="" class="sidebar-link"><h4>USERS</h4></a></li>
-        <li><a href="" class="sidebar-link"><h4>LOCATIONS</h4></a></li>
-        <li><a href="" class="sidebar-link"><h4>WORKFLOWS</h4></a></li>
-        <li><a href="" class="sidebar-link"><h4>JOB BOARDS</h4></a></li>
-        <li><a href="" class="sidebar-link"><h4>SOCIAL</h4></a></li>
+        <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-users"></i><h4>USERS</h4></a></li>
+        <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-map-marked-alt"></i><h4>LOCATIONS</h4></a></li>
+        <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-sitemap"></i><h4>WORKFLOWS</h4></a></li>
+        <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-clipboard-list"></i><h4>JOB BOARDS</h4></a></li>
+        <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-share-alt-square"></i><h4>SOCIAL</h4></a></li>
       </ul>
     </article><!-- /.sidebar-admin -->
-    <article class="sidebar-ctgry">
+    <article class="sidebar--ctgry">
       <h6 class="sidebar-header">Categories</h6>
       <label class="sidebar-ctgry-list"><h4>Administrative</h4>
-        <input type="checkbox" checked="checked">
+        <input class="checkbox" type="checkbox" checked="checked">
         <span class="checkmark checkmark-1"></span>
       </label>
       <label class="sidebar-ctgry-list"><h4>Design</h4>
-        <input type="checkbox" checked="checked">
+        <input class="checkbox" type="checkbox">
         <span class="checkmark checkmark-2"></span>
       </label>
       <label class="sidebar-ctgry-list"><h4>Executive</h4>
-        <input type="checkbox" checked="checked">
+        <input class="checkbox" type="checkbox">
         <span class="checkmark checkmark-3"></span>
       </label>
       <label class="sidebar-ctgry-list"><h4>Human Resources</h4>
-        <input type="checkbox" checked="checked">
+        <input class="checkbox" type="checkbox">
         <span class="checkmark checkmark-4"></span>
       </label>
     </article><!-- /.sidebar-ctgry -->
   </section><!-- /.sidebar -->
-  <header>
-    <section class="top-nav">
-      <article class="hamburger">
-      </article>
-      <article class="search-bar">
-        <p class="search-placer">Search for a job, task, or resume</p>
-      </article>
-      <article class="add-person">
-      </article>
-      <article class="add-listing">
-      </article>
-      <article class="see-grid-view">
-      </article>
-    </section>
-    <section class="main-header">
-      <article class="listing-header">
+</div><!-- /.sidebar-div -->
+<div class="header-main-div">
+  <header class="header">
+    <section class="header--top">
+      <article class="header-top-div hamburger">
+        <i class="top-icon caret-icon fas fa-caret-left"></i><i class="top-icon fas fa-bars"></i>
+      </article><!-- /.hamburger -->
+      <article class="header-top-div search-bar">
+        <i class="search-icon fas fa-search"></i>
+        <p contenteditable="true" class="search-placer">Search for a job, task, or resume</p>
+      </article><!-- /.search-bar -->
+      <article class="header-top-div add-person">
+        <i class="top-icon add-person-icon fas fa-user-plus"></i>
+      </article><!-- /.add-person -->
+      <article class="header-top-div calendar-add">
+        <i class="top-icon calendar-add-icon fas fa-calendar-plus"></i>
+      </article><!-- /.calendar-add -->
+      <article class="header-top-div grid-view">
+        <i class="top-icon grid-view-icon fas fa-th"></i>
+      </article><!-- /.grid-view -->
+    </section><!-- /.top-nav -->
+    <section class="header--main">
+      <article class="header-listing">
         <h1>Customer Service Representative</h1>
-        <ul class="listing-subheader">
-          <li class="listing-location">San Fransisco, CA</li>
-          <li class="listing-preview">Preview this post</li>
-        </ul>
-      </article>
-      <article class="header-buttons">
-        
-      </article>
-      <article class="header-main-nav">
-        <ul class="main-nav">
-          <li><a href="" class="main-nav-link">
-              <h4>SUMMARY</h4>
-            </a></li>
-          <li><a href="" class="main-nav-link">
-              <h4>APPLICANTS</h4>
-            </a></li>
-          <li><a href="" class="main-nav-link">
-              <h4>JOB BOARD</h4>
-            </a></li>
-          <li><a href="" class="main-nav-link">
-              <h4>INTERVIEWS</h4>
-            </a></li>
-          <li><a href="" class="main-nav-link">
-              <h4>ACTIVITY</h4>
-            </a></li>
-          <li><a href="" class="main-nav-link">
-              <h4>BROADCAST</h4>
-            </a></li>
-          <li><a href="" class="main-nav-link">
-              <h4>NOTIFICATIONS</h4>
-            </a></li>
-        </ul>
-      </article>
-    </section>
-  </header>
+        <p class="listing-subheader">
+          <i class="location-icon fas fa-map-marker-alt"></i><span class="subheader-location">San Fransisco, CA</span><span class="dot">•</span><a href="" class="subheader-preview">Preview this post</a>
+        </p>
+      </article><!-- /.header-listing -->
+      <article class="header-btns">
+        <button class="header-btn header-btn--status">
+          <i class="status-icon fas fa-circle"></i>OPEN
+        </button>
+        <button class="header-btn header-btn--bookmark"><i class="header-icon fas fa-bookmark"></i></button>
+        <button class="header-btn header-btn--edit"><i class="header-icon fas fa-pencil-alt"></i></button>
+        <button class="header-btn header-btn--delete"><i class="header-icon fas fa-trash-alt"></i></button>
+      </article><!-- /.header-buttons -->
+    </section><!-- /.main-header -->
+    <section class="header--nav">
+      <ul class="header-nav-list">
+        <li><a href="" class="main-nav-link">
+            <h4>SUMMARY</h4>
+          </a></li>
+        <li><a href="" class="main-nav-link">
+            <h4>APPLICANTS</h4>
+          </a></li>
+        <li><a href="" class="main-nav-link">
+            <h4>JOB BOARD</h4>
+          </a></li>
+        <li><a href="" class="main-nav-link">
+            <h4>INTERVIEWS</h4>
+          </a></li>
+        <li><a href="" class="main-nav-link">
+            <h4>ACTIVITY</h4>
+          </a></li>
+        <li><a href="" class="main-nav-link">
+            <h4>BROADCAST</h4>
+          </a></li>
+        <li><a href="" class="main-nav-link">
+            <h4>NOTIFICATIONS</h4>
+          </a></li>
+      </ul>
+    </section><!-- /.header-nav -->
+  </header><!-- /.header -->
+  <main class="main">
+    <section class="graph-area">
+      <article class="graphs">
+        <div class="circle-graph circle-graph-1">
+          <h2 class="circle-graph-header">3,154</h2>
+          <h4>APPLICANTS</h4>
+        </div><!-- /.circle-graph-1 -->
+        <div class="circle-graph circle-graph-2">
+          <h2 class="circle-graph-header">1,546</h2>
+          <h4>INTERVIEWS</h4>
+        </div><!-- /.circle-graph-2 -->
+        <div class="circle-graph circle-graph-3">
+          <h2 class="circle-graph-header">912</h2>
+          <h4>FORWARDS</h4>
+        </div><!-- /.circle-graph-3 -->
+        <div class="bar-graph">
+          <p class="bar-graph-bubble">
+            <span class="bubble-day"></span>
+            <span class="bubble-date"></span>
+            <span class="applicant-count">382</span>
+            Applicants/
+            <span class="interview-count">37</span>
+            Interviews
+          </p><!-- /.bar-graph-bubble -->
+        </div><!-- /.bar-graph -->
+      </article><!-- /.graphs -->
+      <article class="graph-btns">
+        <button class="circle-graph--totals-btn">
+          <h4>TOTALS • Out of <span class="totals-btn--view-count">5,231</span> views</h4>
+        </button>
+        <button class="bar-graph--applicants-btn">
+          <h4>APPLICANTS/DAY</h4>
+        </button>
+      </article><!-- /.graph-btns -->
+    </section><!-- /.graph-area -->
+    <section class="info-and-share">
+      <article class="job-description-area">
+        <table class="job-description-table">
+          <tr class="row-1">
+            <th class="job-description--main-header">
+              <h3>JOB DESCRIPTION</h3>
+            </th>
+            <td>
+              <button class="job-description--edit-btn"><h3>EDIT</h3></button>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <h3>POSITION TITLE</h3>
+            </th>
+            <td>
+              Customer Service Representative
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <h3>LOCATION</h3>
+            </th>
+            <td>
+              San Francisco, CA
+            </td>
+          </tr>
+          <tr>
+            <th>
+              EMPLOYMENT TYPE
+            </th>
+            <td>
+              Full-time
+            </td>
+          </tr>
+          <tr>
+            <th>
+              EXPERIENCE
+            </th>
+            <td>
+              Mid-level
+            </td>
+          </tr>
+          <tr>
+            <th>
+              STATUS
+            </th>
+            <td>
+              Open
+            </td>
+          </tr>
+          <tr>
+            <th>
+              DESCRIPTION
+            </th>
+            <td>
+              The Customer Service Representative is responsible for interacting with and providing quality assistance to all customers, responsible for keeping up-to-date the various product line-ups, helping the business reduce customer service wait times, all while doing a backhand spring and eating a ham sandwich.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              HIRING LEAD
+            </th>
+            <td>
+              <img src="images/boss-lady.jpg" alt="Hiring Lead Avatar" class="hiring-avatar">
+              Tia Tizzy
+            </td>
+          </tr>
+          <tr>
+            <th>
+              APPROVED SALARY
+            </th>
+            <td class="table-salary-bold">
+              $58,000
+            </td>
+          </tr>
+        </table>
+      </article><!-- /.job-description-area -->
+      <aside class="share-area">
+        <article class="share-area--btns">
+          <button class="fb-share-btn">Post to Facebook</button>
+          <button class="tw-share-btn">Tweet this Job</button>
+          <button class="in-share-btn">Post to Linkedin</button>
+        </article>
+        <article class="share-area--url">
+          <h5 class="url-header">Link to this Job</h5>
+          <p class="share-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni, corrupti natus, qui, adipisci.</p>
+          <button class="share-area--copy-btn">Copy</button>
+        </article>
+        <article class="share-area--widget">
+          <h5 class="widget-header">Use the Button Widget</h5>
+          <p class="share-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni, corrupti natus, qui, adipisci.</p>
+          <button class="share-area--copy-btn">Copy</button>
+        </article>
+        <article class="share-area--email-upload">
+          <h5 class="email-upload-header">
+            <p class="share-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni, corrupti natus, qui, adipisci.</p>
+            <button class="share-area--copy-btn">Copy</button>
+          </h5>
+        </article>
+      </aside><!-- /.share-area -->
+    </section><!-- /.info-and-share -->
+  </main><!-- /.main -->
+</div><!-- /.header-main-div -->
 </body>
 </html>
