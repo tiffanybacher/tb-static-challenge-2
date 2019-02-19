@@ -1,0 +1,606 @@
+/* ----- body styles ----- */
+
+body {
+  color: #666;
+  font-family: 'Barlow', sans-serif;
+  margin: 0 auto;
+  display: flex;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: .9em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: .8em;
+  font-weight: 700;
+  margin: 0;
+}
+
+h5{
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0;
+}
+
+h6 {
+  font-size: .8em;
+}
+
+h3,
+h4,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #888;
+  text-decoration: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+/* ----- .sidebar styles ----- */
+
+.sidebar {
+  background-color: #40454f;
+  color: #bcbcbc;
+  width: 200px;
+  height: 100%;
+}
+
+.sidebar--user {
+  text-align: center;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 75px;
+  margin-top: 40px;
+}
+
+.user-sortdown-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebar--main,
+.sidebar--admin,
+.sidebar--ctgry {
+  border-top: 1px solid #535966;
+  box-shadow: 0 -2.5px #353942;
+  padding: 10px 0;
+}
+
+.sidebar-header {
+  color: #888;
+  margin: 15px 20px;
+}
+
+.sidebar-main-list,
+.sidebar-admin-list,
+.sidebar-ctgry-list {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list-item {
+  padding: 15px;
+  border-left: 4px solid #40454f;
+}
+
+.active-sidebar-link,
+.sidebar-list-item:hover {
+  background-color: #333;
+  border-left: 4px solid #5ea6bc;
+}
+
+.sidebar-list-item:hover > .sidebar-link {
+  color: #fff;
+}
+
+.sidebar-link {
+  color: #bcbcbc;
+}
+
+.sidebar-link h4 {
+  display: inline;
+}
+
+.sidebar-icon {
+  display: inline;
+  margin-right: 10px;
+  text-align: center;
+  width: 20px;
+}
+
+.sidebar-ctgry-list {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  position: relative;
+}
+
+.sidebar-ctgry-list input {
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+}
+
+.checkmark {
+  border-radius: 1px;
+  height: 15px;
+  margin-left: 20px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 15px;
+}
+
+.checkmark-1 {
+  background-color: #f1be49;
+}
+
+.checkmark-2 {
+  background-color: #5ea6bc;
+}
+
+.checkmark-3 {
+  background-color: #d38685;
+}
+
+.checkmark-4 {
+  background-color: #a5ca7d;
+}
+
+.checkbox:hover ~ .checkmark-1 {
+  background-color: #f2d100;
+}
+
+.checkbox:hover ~ .checkmark-2 {
+  background-color: #4cbedb;
+}
+
+.checkbox:hover ~ .checkmark-3 {
+  background-color: #fc9292;
+}
+
+.checkbox:hover ~ .checkmark-4 {
+  background-color: #bae28c;
+}
+
+.checkmark:after {
+  border: solid #40454f;
+  border-width: 0 2px 2px 0;
+  content: "";
+  display: none;
+  height: 6px;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  transform: rotate(45deg);
+  width: 3px;
+}
+
+.checkbox:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* ----- header styles ----*/
+
+.header--top {
+  display: flex;
+}
+
+.header-top-div {
+  border-right: solid 2px #ecf1f5;
+  border-bottom: solid 2px #ecf1f5;
+  padding: 25px;
+  text-align: center;
+}
+
+.hamburger,
+.add-person,
+.calendar-add,
+.grid-view {
+  flex: 1;
+}
+
+.search-bar {
+  flex: 15;
+  text-align: left;
+}
+
+.hamburger:hover,
+.add-person:hover,
+.calendar-add:hover,
+.grid-view:hover {
+  background-color: #5ea6bc;
+}
+
+.header-top-div:hover > .top-icon {
+  color: #fff;
+}
+
+.caret-icon {
+  color: #5ea6bc;
+  margin-right: 2px;
+}
+
+.top-icon,
+.search-icon,
+.header-icon {
+  color: #999;
+}
+
+.search-placer {
+  color: #d4d8db;
+  display: inline;
+  margin-left: 10px;
+  outline: none;
+}
+
+.grid-view {
+  border-right: 0;
+}
+
+.header--main {
+  display: flex;
+  justify-content: space-between;
+  min-width: 600px;
+  padding: 20px 40px 40px 50px;
+}
+
+.header-listing {
+  min-width: 250px;
+}
+
+.location-icon {
+  margin-right: 5px;
+}
+
+.dot {
+  color: #d4d8db;
+  margin: 0 10px;
+}
+
+.subheader-preview {
+  color: #5ea6bc;
+}
+
+.subheader-preview:hover {
+  text-decoration: underline;
+}
+
+.header-btns {
+  margin-top: 10px;
+  min-width: 305px;
+}
+
+.header-btn--status,
+.header-btn,
+.up-arrow-icon,
+.graph-btn {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #ecf1f5;
+  color: #777;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  font-weight: 700;
+  margin: 10px;
+  min-width: 42px;
+  padding: 10px;
+}
+
+.header-btn--status {
+  padding: 10px 15px;
+}
+
+.header-btn:hover,
+.graph-btn:hover {
+  background-color: #999;
+  border: #999;
+}
+
+.header-btn:hover > .header-icon {
+  color: #fff;
+}
+
+.status-icon {
+  color: yellowgreen;
+  margin-right: 5px;
+}
+
+.header--nav {
+  height: 35px;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 0 40px;
+  padding: 0;
+  width: 80%;
+}
+
+.header-nav-list h4 {
+  margin-bottom: 15px;
+}
+
+.active-nav-link,
+.header-nav-list li:hover {
+  border-bottom: 4px solid #5ea6bc;
+}
+
+.active-nav-link a,
+.header-nav-list li:hover > .header-nav-link {
+  color: #333;
+}
+
+/* ----- main styles ----- */
+
+.main {
+  background-color: #ecf1f5;
+  padding: 0px 50px 50px;
+}
+
+.graph-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle-graph-area {
+  text-align: center;
+}
+
+.circle-graphs {
+  display: flex;
+  justify-content: space-between;
+  margin: 75px 0 0 0;
+}
+
+.circle-graph {
+  border-radius: 50%;
+  border: 12px solid #dbe4ea;
+  height: 150px;
+  margin: 0 40px 0 0;
+  width: 150px;
+}
+
+.circle-graph-text {
+  color: #777;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.bar-graph-area {
+  text-align: center;
+}
+
+.bar-graph-placer {
+  margin: 40px 0 0 10px;
+  width: 475px;
+}
+
+.bar-graph-bubble {
+  display: none;
+}
+
+.circle-graph-totals-btn {
+  margin: 35px 0 0 0;
+}
+
+.bar-graph-applicants-btn {
+  margin: 10px 0 0 0;
+}
+
+.graph-btn {
+  border: 2px solid #dbe4ea;
+}
+
+.graph-btn:hover {
+  color: #fff;
+}
+
+.main-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 0 0;
+}
+
+.main-line-1,
+.main-line-2 {
+  border-top: 2.5px solid #dbe4ea;
+  width: 47%;
+  height: 0;
+}
+
+.up-arrow-icon {
+  text-align: center;
+  border: solid 2px #dbe4ea;
+}
+
+.info-and-share {
+  display: flex;
+  margin: 150px 0 0 0;
+}
+
+.job-description-table {
+  background-color: #fff;
+  border-collapse: collapse;
+  color: #777;
+}
+
+th,
+tr {
+  border-bottom: 2px solid #ecf1f5;
+  padding: 30px;
+}
+
+.job-description--main-header {
+  padding: 15px 30px;
+}
+
+.job-description--edit-btn {
+  background-color: #999;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.row-1 {
+  background-color: #888;
+  color: #fff;
+}
+
+.column-1 {
+  min-width: 125px;
+  text-align: left;
+}
+
+.column-2 {
+  max-width: 768px;
+  min-width: 600px;
+}
+
+.edit-icon {
+  margin-right: 5px;
+}
+
+.job-description {
+  padding: 30px 30px 30px 0;
+}
+
+.hiring-avatar {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.table--salary {
+  font-weight: 700;
+}
+
+.share-area {
+  padding: 0 0 50px 50px;
+}
+
+.share-area--btns {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-btn {
+  border-radius: 3px;
+  border: none;
+  color: #ecf1f5;
+  font-size: .9em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.fb-share-btn {
+  background-color: darkblue;
+}
+
+.tw-share-btn {
+  background-color: skyblue;
+}
+
+.in-share-btn {
+  background-color: royalblue;
+}
+
+.share-area-line {
+  border-top: 2px solid #dbe4ea;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.share-area-div {
+  position: relative;
+}
+
+.share-area-div-1 {
+  margin: 20px 0 0 0;
+}
+
+.share-area-icon {
+  padding-right: 10px;
+}
+
+.share-blurb {
+  font-size: .8em;
+  padding: 5px 0;
+}
+
+.share-area-div input {
+  border-radius: 3px 0 0 3px;
+  border: none;
+  box-shadow: -.5px .5px 1px #999 ;
+  font-size: .8em;
+  font-weight: 500;
+  height: 45px;
+  padding: 0 0 0 10px;
+  width: 225px;
+}
+
+.share-area-btn {
+  background-color: #5ea6bc;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  box-shadow: 0 .5px 1px;
+  color: #fff;
+  font-size: .8em;
+  font-weight: 500;
+  height: 46px;
+  position: absolute;
+  right: 0;
+  top: 50;
+  width: 65px;
+}
+
+.share-area-btn:hover {
+  background-color: #4cbedb;
+}
+
+.share-area-btn:active {
+  background-color: #5ea6bc;
+}
+
+
+
+
+
+
+
