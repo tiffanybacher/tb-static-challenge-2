@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700" rel="stylesheet">
   <title>Job Search</title>
 </head>
 <body>
@@ -32,7 +32,7 @@
         <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-users"></i><h4>USERS</h4></a></li>
         <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-map-marked-alt"></i><h4>LOCATIONS</h4></a></li>
         <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-sitemap"></i><h4>WORKFLOWS</h4></a></li>
-        <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-clipboard-list"></i><h4>JOB BOARDS</h4></a></li>
+        <li class="active-sidebar-link sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-clipboard-list"></i><h4>JOB BOARDS</h4></a></li>
         <li class="sidebar-list-item"><a href="" class="sidebar-link"><i class="sidebar-icon fas fa-share-alt-square"></i><h4>SOCIAL</h4></a></li>
       </ul>
     </article><!-- /.sidebar-admin -->
@@ -85,7 +85,7 @@
         </p>
       </article><!-- /.header-listing -->
       <article class="header-btns">
-        <button class="header-btn header-btn--status">
+        <button class="header-btn--status">
           <i class="status-icon fas fa-circle"></i>OPEN
         </button>
         <button class="header-btn header-btn--bookmark"><i class="header-icon fas fa-bookmark"></i></button>
@@ -95,25 +95,25 @@
     </section><!-- /.main-header -->
     <section class="header--nav">
       <ul class="header-nav-list">
-        <li><a href="" class="main-nav-link">
+        <li class="active-nav-link"><a href="" class="header-nav-link">
             <h4>SUMMARY</h4>
           </a></li>
-        <li><a href="" class="main-nav-link">
+        <li><a href="" class="header-nav-link">
             <h4>APPLICANTS</h4>
           </a></li>
-        <li><a href="" class="main-nav-link">
+        <li><a href="" class="header-nav-link">
             <h4>JOB BOARD</h4>
           </a></li>
-        <li><a href="" class="main-nav-link">
+        <li><a href="" class="header-nav-link">
             <h4>INTERVIEWS</h4>
           </a></li>
-        <li><a href="" class="main-nav-link">
+        <li><a href="" class="header-nav-link">
             <h4>ACTIVITY</h4>
           </a></li>
-        <li><a href="" class="main-nav-link">
+        <li><a href="" class="header-nav-link">
             <h4>BROADCAST</h4>
           </a></li>
-        <li><a href="" class="main-nav-link">
+        <li><a href="" class="header-nav-link">
             <h4>NOTIFICATIONS</h4>
           </a></li>
       </ul>
@@ -121,20 +121,32 @@
   </header><!-- /.header -->
   <main class="main">
     <section class="graph-area">
-      <article class="graphs">
-        <div class="circle-graph circle-graph-1">
-          <h2 class="circle-graph-header">3,154</h2>
-          <h4>APPLICANTS</h4>
-        </div><!-- /.circle-graph-1 -->
-        <div class="circle-graph circle-graph-2">
-          <h2 class="circle-graph-header">1,546</h2>
-          <h4>INTERVIEWS</h4>
-        </div><!-- /.circle-graph-2 -->
-        <div class="circle-graph circle-graph-3">
-          <h2 class="circle-graph-header">912</h2>
-          <h4>FORWARDS</h4>
-        </div><!-- /.circle-graph-3 -->
+      <article class="circle-graph-area">
+        <div class="circle-graphs">
+          <div class="circle-graph circle-graph-1">
+            <div class="circle-graph-text">
+              <h2 class="circle-graph-header">3,154</h2>
+              <h4>APPLICANTS</h4>
+            </div>
+          </div><!-- /.circle-graph-1 -->
+          <div class="circle-graph circle-graph-2">
+            <div class="circle-graph-text">
+              <h2 class="circle-graph-header">1,546</h2>
+              <h4>INTERVIEWS</h4>
+            </div>
+          </div><!-- /.circle-graph-2 -->
+          <div class="circle-graph circle-graph-3">
+            <div class="circle-graph-text">
+              <h2 class="circle-graph-header">912</h2>
+              <h4>FORWARDS</h4>
+            </div>
+          </div><!-- /.circle-graph-3 -->
+        </div><!-- /.circle-graphs -->
+        <button class="circle-graph-totals-btn graph-btn">TOTALS • Out of <span class="totals-btn--view-count">5,231</span> views</button>
+      </article><!-- /.circle-graph-area -->
+      <article class="bar-graph-area">
         <div class="bar-graph">
+          <img class="bar-graph-placer" src="images/bar-graph-placer.png" alt="">
           <p class="bar-graph-bubble">
             <span class="bubble-day"></span>
             <span class="bubble-date"></span>
@@ -144,89 +156,87 @@
             Interviews
           </p><!-- /.bar-graph-bubble -->
         </div><!-- /.bar-graph -->
-      </article><!-- /.graphs -->
-      <article class="graph-btns">
-        <button class="circle-graph--totals-btn">
-          <h4>TOTALS • Out of <span class="totals-btn--view-count">5,231</span> views</h4>
-        </button>
-        <button class="bar-graph--applicants-btn">
-          <h4>APPLICANTS/DAY</h4>
-        </button>
-      </article><!-- /.graph-btns -->
+        <button class="bar-graph-applicants-btn graph-btn">APPLICANTS/DAY</button>
+      </article><!-- /.bar-graph-area -->
     </section><!-- /.graph-area -->
+    <div class="main-line">
+      <div class="main-line-1"></div>
+      <!-- <i class="up-arrow-icon fas fa-angle-up"></i> -->
+      <div class="main-line-2"></div>
+    </div>
     <section class="info-and-share">
       <article class="job-description-area">
         <table class="job-description-table">
           <tr class="row-1">
-            <th class="job-description--main-header">
+            <th class=" column-1 job-description--main-header">
               <h3>JOB DESCRIPTION</h3>
             </th>
-            <td>
-              <button class="job-description--edit-btn"><h3>EDIT</h3></button>
+            <td class="column-2">
+              <button class="job-description--edit-btn"><i class="edit-icon fas fa-pencil-alt"></i>EDIT</button>
             </td>
           </tr>
           <tr>
-            <th>
-              <h3>POSITION TITLE</h3>
+            <th class="column-1">
+              <h4>POSITION TITLE</h4>
             </th>
-            <td>
+            <td class="column-2">
               Customer Service Representative
             </td>
           </tr>
           <tr>
-            <th>
-              <h3>LOCATION</h3>
+            <th class="column-1">
+              <h4>LOCATION</h4>
             </th>
-            <td>
+            <td class="column-2">
               San Francisco, CA
             </td>
           </tr>
           <tr>
-            <th>
-              EMPLOYMENT TYPE
+            <th class="column-1">
+              <h4>EMPLOYMENT TYPE</h4>
             </th>
-            <td>
+            <td class="column-2">
               Full-time
             </td>
           </tr>
           <tr>
-            <th>
-              EXPERIENCE
+            <th class="column-1">
+              <h4>EXPERIENCE</h4>
             </th>
-            <td>
+            <td class="column-2">
               Mid-level
             </td>
           </tr>
           <tr>
-            <th>
-              STATUS
+            <th class="column-1">
+              <h4>STATUS</h4>
             </th>
-            <td>
+            <td class="column-2">
               Open
             </td>
           </tr>
           <tr>
-            <th>
-              DESCRIPTION
+            <th class="column-1">
+              <h4>DESCRIPTION</h4>
             </th>
-            <td>
+            <td class="column-2 job-description">
               The Customer Service Representative is responsible for interacting with and providing quality assistance to all customers, responsible for keeping up-to-date the various product line-ups, helping the business reduce customer service wait times, all while doing a backhand spring and eating a ham sandwich.
             </td>
           </tr>
           <tr>
-            <th>
-              HIRING LEAD
+            <th class="column-1">
+              <h4>HIRING LEAD</h4>
             </th>
-            <td>
-              <img src="images/boss-lady.jpg" alt="Hiring Lead Avatar" class="hiring-avatar">
-              Tia Tizzy
+            <td class="column-2">
+              <img src="images/boss-lady.jpg" alt="Hiring Lead Avatar" class="hiring-avatar" align="middle">
+              <span class="hiring-name">Tia Tizzy</span>
             </td>
           </tr>
           <tr>
-            <th>
-              APPROVED SALARY
+            <th class="column-1">
+              <h4>APPROVED SALARY</h4>
             </th>
-            <td class="table-salary-bold">
+            <td class="column-2 table--salary">
               $58,000
             </td>
           </tr>
@@ -234,25 +244,29 @@
       </article><!-- /.job-description-area -->
       <aside class="share-area">
         <article class="share-area--btns">
-          <button class="fb-share-btn">Post to Facebook</button>
-          <button class="tw-share-btn">Tweet this Job</button>
-          <button class="in-share-btn">Post to Linkedin</button>
+          <button class="fb-share-btn social-btn">Post to Facebook</button>
+          <button class="tw-share-btn social-btn">Tweet this Job</button>
+          <button class="in-share-btn social-btn">Post to Linkedin</button>
         </article>
-        <article class="share-area--url">
-          <h5 class="url-header">Link to this Job</h5>
-          <p class="share-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni, corrupti natus, qui, adipisci.</p>
-          <button class="share-area--copy-btn">Copy</button>
+        <article class="share-area-div share-area-div-1">
+          <h5 class="url-header"><i class="share-area-icon fas fa-globe-americas"></i>Link to this Job</h5>
+          <p class="share-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni, corrupti natus, qui.</p>
+          <input type="text" placeholder="http://loremipsum.dol/sit.amenity_foul_goo...">
+          <button class="share-area-btn">Copy</button>
         </article>
-        <article class="share-area--widget">
-          <h5 class="widget-header">Use the Button Widget</h5>
-          <p class="share-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni, corrupti natus, qui, adipisci.</p>
-          <button class="share-area--copy-btn">Copy</button>
+        <div class="share-area-line"></div>
+        <article class="share-area-div">
+          <h5 class="widget-header"><i class="share-area-icon fas fa-window-maximize"></i>Use the Button Widget</h5>
+          <p class="share-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni, corrupti natus, qui.</p>
+          <input type="text" placeholder="<script type='text/javascript' sit='ditto'...">
+          <button class="share-area-btn">Copy</button>
         </article>
-        <article class="share-area--email-upload">
-          <h5 class="email-upload-header">
-            <p class="share-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni, corrupti natus, qui, adipisci.</p>
-            <button class="share-area--copy-btn">Copy</button>
-          </h5>
+        <div class="share-area-line"></div>
+        <article class="share-area-div">
+          <h5 class="email-upload-header"><i class="share-area-icon fas fa-envelope"></i>Upload Resumes by Email</h5>
+            <p class="share-blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni, corrupti natus, qui.</p>
+            <input type="text" placeholder="tiatizzy@gmail.com">
+            <button class="share-area-btn">Copy</button>
         </article>
       </aside><!-- /.share-area -->
     </section><!-- /.info-and-share -->
